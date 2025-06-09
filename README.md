@@ -1,76 +1,141 @@
-<h1 align="center">🚀 Kotlin Week</h1>
+# 📅 Cronograma Kotlin — Semana de Estudo
 
-<p align="center">
-  🔥 Uma semana intensa pra dominar Kotlin do zero<br>
-</p>
+## 🗓️ Dia 1 — Fundamentos
 
-## 📅 Cronograma
-
-### 🗓️ Dia 1 — Fundamentos
-
-- Variáveis (`val`, `var`)
-- Tipos básicos (`String`, `Int`, `Double`, `Boolean`)
-- Operadores (Aritméticos, Comparação, Lógicos, Atribuição)
+**🧠 Tópicos:**
+- `val` vs `var`
+- Tipos básicos: `String`, `Int`, `Double`, `Boolean`
+- Operadores:
+  - Aritméticos: `+`, `-`, `*`, `/`, `%`
+  - Comparação: `==`, `!=`, `>`, `<`, `>=`, `<=`
+  - Lógicos: `&&`, `||`, `!`
+  - Atribuição: `=`, `+=`, `-=`, etc
 - Funções (`fun`)
-- Controle de fluxo (`if/else`, `when`)
-- Loops (`for`, `while`, `repeat`)
+- Controle de fluxo: `if/else`, `when`
+- Loops: `for`, `while`, `repeat`
 
-### 🗓️ Dia 2 — Coleções
+---
 
-- List, MutableList, Set, Map
-- Métodos poderosos: `map`, `filter`, `forEach`, `find`, `reduce`
-- Manipulação de listas: adicionar, remover, acessar, etc.
+## 🗓️ Dia 2 — Coleções
 
-### 🗓️ Dia 3 — POO (Programação Orientada a Objetos)
+**📚 Tópicos:**
+- `List`, `MutableList`, `Set`, `Map`
+- Métodos funcionais:
+  - `map`, `filter`, `forEach`, `find`, `reduce`
+- Manipulação:
+  - Adicionar, remover, acessar itens
+  - Iterar e transformar listas
 
+---
+
+## 🗓️ Dia 3 — Programação Orientada a Objetos (POO)
+
+**🔧 Tópicos:**
 - `data class`
 - Classes, atributos e métodos
-- Encapsulamento (`private`, `public`)
-- Objetos e instâncias
+- Encapsulamento: `private`, `public`
+- Instanciando objetos e usando classes
 
-### 🗓️ Dia 4 — Null Safety + Erros
+---
 
+## 🗓️ Dia 4 — Null Safety + Erros + Singleton
+
+**🛑 Null Safety**
 - Operadores:
-    - `?` (chamada segura)
-    - `!!` (afirmação não nula)
-    - `?:` (Elvis operator)
-- Tratamento de erros: `try`, `catch`, `finally`
+  - `?` (safe call)
+  - `!!` (not-null assertion)
+  - `?:` (Elvis operator)
+- Combinações com `let`
 
-### 🗓️ Dia 5 — Funções Avançadas + Lambdas
+**💥 Tratamento de erros**
+- `try`, `catch`, `finally`
+- Lançar erros com `throw`
+- Criar erros customizados (classes que herdam de `Exception`)
 
-- Lambdas
-- Funções como parâmetro
-- Funções de escopo:
-    - `let`, `run`, `with`, `apply`, `also`
+**👤 Singleton**
+- Criando singletons com `object`
+- Exemplo prático: `Logger`, `Config`, `DBConnection`
+- Quando usar Singleton na real
 
-### 🗓️ Dia 6 — Mock de Banco + CRUD
+---
 
-- Banco fake com `mutableListOf`
-- Operações CRUD:
-    - Create, Read, Update, Delete
-- Busca com `filter` e `find`
+## 🗓️ Dia 5 — Funções Avançadas + Lambdas + Módulos
 
-### 🗓️ Dia 7 — Projeto Final 🚀
+**⚡ Lambdas**
+- Sintaxe básica: `{ param -> corpo }`
+- `it` como parâmetro implícito
+- Trailing lambda syntax
 
-- Sistema rodando no terminal com:
-    - Cadastro
-    - Busca
-    - Listagem
-    - Update
-    - Delete
-- Tratamento de erros
-- Uso de lambdas e null safety
+**📦 Funções de escopo**
+- `let`, `run`, `with`, `apply`, `also`
+- Usos práticos:
+  - `apply`: inicialização
+  - `let`: com null safety
+  - `run`: com contexto de execução
+
+**🔗 Módulos**
+- Criando múltiplos arquivos `.kt`
+- Separando responsabilidades por arquivos
+- Modularização em projetos maiores
+
+---
+
+## 🗓️ Dia 6 — Packages + Banco Fake + CRUD
+
+**📁 Packages**
+- Como declarar: `package meu.projeto.modelo`
+- Importando de outros pacotes
+- Organização em: `models/`, `services/`, `controllers/`, etc.
+
+**💾 Banco Fake**
+- Usar `mutableListOf` como banco de dados fake
+- Gerar IDs únicos
+- Validação simples
+
+**🛠️ CRUD**
+- `Create`: adicionar item
+- `Read`: listar e buscar com `filter`, `find`, `firstOrNull`
+- `Update`: atualizar item com `indexOf`, `mapIndexed`
+- `Delete`: remover com `removeIf` ou `removeAt`
+
+---
+
+## 🗓️ Dia 7 — Projeto Final 🚀
+
+**🎯 Desafio: construir um sistema de cadastro no terminal**
+
+**✅ Deve ter:**
+- Cadastro
+- Busca
+- Listagem
+- Update
+- Delete
+
+**🛡️ Técnicas e boas práticas**
+- Tratamento de erros com `try/catch`
+- Null safety nos dados de entrada
+- Uso de lambdas
+- Funções de escopo (`apply`, `run`, etc)
+- Singleton (ex: repositório, config)
+- Arquitetura separada por pacotes e arquivos
+- Código limpo e comentado
+
+---
 
 ## 🛠️ Tecnologias usadas
 
-- Kotlin
-- IntelliJ IDEA (ou qualquer IDE que suporte Kotlin)
-- Terminal na força bruta
+- **Kotlin**
+- **IntelliJ IDEA** (ou qualquer IDE com suporte a Kotlin)
+- **Terminal** (modo raiz 🤘)
+
+---
 
 ## ✍️ Autor
 
-Feito com muito café por [Ruan Rickelme Ramos](https://github.com/SrLuc) ☕💻
+Feito com muito café por **Ruan Rickelme Ramos** ☕💻
+
+---
 
 ## ⚡ Bora codar!
 
-Se curtiu, deixa aquele ⭐ no repositório e compartilha com a galera dev! Bora fazer acontecer! 🚀
+Se curtir, dá aquela ⭐ no repositório, compartilha com a galera dev e bora fazer acontecer! 🚀
