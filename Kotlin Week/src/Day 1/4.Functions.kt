@@ -24,7 +24,7 @@ fun functionWithVararg(vararg names: String) {
 
 // Main function its the entry point of the program in Kotlin
 // It is where the program starts executing
-// It is similar to the main function in other programming languages
+// It is similar to the Library.main function in other programming languages
 // such as C, C++, Java, etc.
 fun main() {
     simpleFunction()

@@ -1,5 +1,3 @@
-import `Day 3`.tracks
-
 data class Track(val id: Int, var name: String, val bpm: Int, val duration: Double, val type: String, val artist: List<String>){
     fun showTrackInfo():String{
         return "$name | $bpm | $duration | $type | ${artist.joinToString(", ")}"
@@ -21,7 +19,7 @@ object TrackManager {
         return "Track $id has deleted"
     }
 
-    //PUT   /:id
+    //PUT/:id
     fun update(id:Int, newName:String) = tracks.find{it.id == id}?.name = newName
 
     //CREATE
