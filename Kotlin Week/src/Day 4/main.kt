@@ -1,5 +1,4 @@
     fun main(){
-
         //Tratamentos de Erros com Throw
 
         fun divider(a:Int, b:Int):Int{
@@ -11,15 +10,17 @@
 
 
         //Criando os própios tratamento de erros
-        class meuErroCustomizado(msg:String):Exception(msg)
+        class MeuErroCustomizado(msg:String):Exception(msg)
+
         fun dividerAgain(a:Int, b:Int):Int{
             if (a == 0 || b == 0){
-                throw meuErroCustomizado("\nDivision by zero not supported")
+                throw MeuErroCustomizado("Estourou aqui")
             }
             return a / b
         }
 
-        divider(2,1)
-        divider(3,0)
+        println("\nDivision by zero")
+        //divider(2,0)
+        dividerAgain(3,0)
     }
 

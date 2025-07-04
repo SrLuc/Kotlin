@@ -1,4 +1,4 @@
-package EP3;
+package Calculadora;
 
 import static org.junit.jupiter.api.Assertions.*;
 

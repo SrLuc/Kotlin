@@ -1,4 +1,4 @@
-package EP6;
+package CarrinhoDeCompras;
 import java.util.ArrayList;
 import java.util.List;
 

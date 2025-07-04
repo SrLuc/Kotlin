@@ -1,4 +1,4 @@
-package EP4;
+package LeitorDeStrings;
 
 import java.util.Scanner;
 

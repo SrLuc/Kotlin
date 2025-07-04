@@ -1,4 +1,4 @@
-package EP6;
+package CarrinhoDeCompras;
 
 public class ProdutoSimples implements Produto {
 
