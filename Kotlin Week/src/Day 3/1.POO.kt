@@ -16,6 +16,5 @@ val baraka = Fighter(1, "Baraka", 100, 20, 10)
 val milena = Fighter(2, "Milena", 100, 10, 20)
 
 fun main() {
-    println("Hello World!")
     println(milena.attack(baraka))
 }
