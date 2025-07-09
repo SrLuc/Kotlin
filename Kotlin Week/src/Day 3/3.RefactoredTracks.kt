@@ -54,8 +54,4 @@ fun main(){
 
     println("\n📦 Faixas finais:")
     TrackManager.getAllTracks().forEach {println(it.showTrackInfo())}
-
-
-
-
 }

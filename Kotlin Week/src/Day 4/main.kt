@@ -8,7 +8,6 @@
             return a / b
         }
 
-
         //Criando os própios tratamento de erros
         class MeuErroCustomizado(msg:String):Exception(msg)
 

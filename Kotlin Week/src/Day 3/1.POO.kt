@@ -1,4 +1,6 @@
 data class Fighter(
+
+
     private val id: Int,
     val name: String,
     val health: Int,

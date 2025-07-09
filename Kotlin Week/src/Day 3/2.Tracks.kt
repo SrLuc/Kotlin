@@ -7,7 +7,7 @@ data class Track(val id:Int, var name:String, val bpm:Int, val duration:Double, 
 
     //GET
     fun showInfoTrack(id:Int):String{
-        var foundTrack = tracks.find { it.id == id }
+        val foundTrack = tracks.find { it.id == id }
 
         return if (foundTrack != null){
             "${foundTrack.name} | ${foundTrack.bpm} | ${foundTrack.duration} | ${foundTrack.type} | ${foundTrack.artist.joinToString(" ")}"
