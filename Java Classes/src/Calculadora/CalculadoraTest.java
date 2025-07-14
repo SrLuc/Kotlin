@@ -12,7 +12,7 @@ class CalculadoraTest {
         int b = 5;
 
         Calculadora cal = new Calculadora();
-        int resultado = cal.multiplicarTest(a, b);
+        int resultado = cal.multiplicar(a, b);
         assertEquals(15, resultado);
     }
 
@@ -22,7 +22,7 @@ class CalculadoraTest {
         int b = -5;
 
         Calculadora cal = new Calculadora();
-        int resultado = cal.multiplicarTest(a, b);
+        int resultado  = cal.multiplicar(a, b);
         assertEquals(15, resultado);
     }
 
@@ -32,7 +32,7 @@ class CalculadoraTest {
         int b = 5;
 
         Calculadora cal = new Calculadora();
-        int resultado = cal.multiplicarTest(a, b);
+        int resultado = cal.multiplicar(a, b);
         assertEquals(-15, resultado);
     }
 
@@ -42,7 +42,7 @@ class CalculadoraTest {
         int b = 2;
 
         Calculadora cal = new Calculadora();
-        int resultado = cal.dividirTest(a, b);
+        int resultado = cal.dividir(a, b);
         assertEquals(5, resultado);
 
     }
@@ -53,7 +53,7 @@ class CalculadoraTest {
         int b = -2;
 
         Calculadora cal = new Calculadora();
-        int resultado = cal.dividirTest(a, b);
+        int resultado = cal.dividir(a, b);
         assertEquals(5, resultado);
     }
 
@@ -63,13 +63,9 @@ class CalculadoraTest {
         int b = -2;
 
         Calculadora cal = new Calculadora();
-        int resultado = cal.dividirTest(a, b);
+        int resultado = cal.dividir(a, b);
         assertEquals(-5, resultado);
 
     }
-
-
-
-
 
 }

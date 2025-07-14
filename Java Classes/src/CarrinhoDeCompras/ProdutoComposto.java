@@ -11,7 +11,6 @@ public class ProdutoComposto implements Produto{
     private List<Produto> produtos;
 
 
-
     public ProdutoComposto(int codigoBarras, String descricao, float preco, List<Produto> produtos) {
         this.codigoBarras = codigoBarras;
         this.descricao = descricao;

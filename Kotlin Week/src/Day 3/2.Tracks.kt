@@ -4,7 +4,6 @@ var tracks = mutableListOf<Track>()
 
 data class Track(val id:Int, var name:String, val bpm:Int, val duration:Double, val type:String, val artist:List<String>){
 
-
     //GET
     fun showInfoTrack(id:Int):String{
         val foundTrack = tracks.find { it.id == id }
