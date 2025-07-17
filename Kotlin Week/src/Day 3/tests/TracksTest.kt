@@ -1,5 +1,5 @@
+import Tracks.Track
 import org.junit.Test
-import Track
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertTrue
 

@@ -1,5 +1,4 @@
-package `Day 3`
-
+package Tracks
 var tracks = mutableListOf<Track>()
 
 data class Track(val id:Int, var name:String, val bpm:Int, val duration:Double, val type:String, val artist:List<String>){
